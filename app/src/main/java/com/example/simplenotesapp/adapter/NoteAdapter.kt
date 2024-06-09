@@ -7,7 +7,8 @@ import com.example.simplenotesapp.data.entity.Note
 import com.example.simplenotesapp.databinding.ItemNotesBinding
 import java.text.SimpleDateFormat
 
-class NoteAdapter(private val mNotes: List<Note>, private val listener: OnNoteClickListener): RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
+class NoteAdapter(private val mNotes: List<Note>, private val listener: OnNoteClickListener):
+    RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
 
     interface OnNoteClickListener{
         fun onNoteClick(note: Note)
